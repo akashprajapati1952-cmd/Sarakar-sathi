@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Scheme } from '../data/schemesData';
+import {type Scheme } from '../data/schemesData';
 
 interface SchemeResultsProps {
   schemes: Scheme[];
