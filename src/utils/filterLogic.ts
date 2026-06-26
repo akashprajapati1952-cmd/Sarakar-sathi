@@ -1,5 +1,5 @@
 
-import { Scheme } from '../data/schemesData';
+import {type Scheme } from '../data/schemesData';
 
 export interface UserInput {
   age: number;

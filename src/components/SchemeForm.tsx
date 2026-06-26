@@ -2,7 +2,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { UserInput } from '../utils/filterLogic';
+import {type UserInput } from '../utils/filterLogic';
 
 interface SchemeFormProps {
   onFilter: (input: UserInput) => void;
