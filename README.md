@@ -1,75 +1,34 @@
-# React + TypeScript + Vite
+# सरकार साथी (Sarkar Sathi) – Government Scheme Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**भारत के लिए बनाओ। असल समस्याओं के लिए बनाओ।**
 
-Currently, two official plugins are available:
+Sarkar Sathi is a 'Hindi-First' mobile-responsive web application built for the **Navgurukul Build for Good 2026 Hackathon** under the theme **05 AWAAZ (Government schemes & entitlements)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 The Problem
+Millions of citizens in India—especially informal workers, farmers, and first-generation students—miss out on life-changing government schemes. The reasons are scattered information, complex legal/official language barriers, and confusing eligibility criteria.
 
-## React Compiler
+## 🚀 Our Solution
+'Sarkar Sathi' simplifies this entire journey in 3 simple steps:
+1. **Eligibility Core Router:** Users enter basic demographic data (Age, Income, State, Occupation).
+2. **Instant Matching:** Our highly optimized TypeScript logic instantly filters and displays only the schemes they qualify for.
+3. **Actionable Roadmap:** Instead of complex jargon, users get a simple Hindi breakdown and a dynamic document checklist to prepare for the application.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** React.js (Vite)
+- **Type Safety:** TypeScript (Strict type interfaces for robust data routing)
+- **Form Management:** Formik & Yup (For bulletproof input validation & localized error messages)
+- **Styling:** Tailwind CSS (Mobile-first, lightweight, and accessible design)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+## 📦 Project Structure
+```text
+src/
+├── components/
+│   ├── SchemeForm.tsx       # Formik + Yup Input Form
+│   └── SchemeResults.tsx    # Filtered Results & Document Checklist
+├── data/
+│   └── schemesData.ts       # Structured JSON/TS Database of Schemes
+├── utils/
+│   └── filterLogic.ts       # Core Eligibility Routing Algorithm
+└── App.tsx                  # Main Layout & State Handler
