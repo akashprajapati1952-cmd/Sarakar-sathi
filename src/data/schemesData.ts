@@ -60,7 +60,7 @@ export const schemesData: Scheme[] = [
       occupations: ['Laborer', 'Farmer', 'All']
     },
     documentsRequired: ['आधार कार्ड', 'राशन कार्ड (पात्र गृहस्थी/अंत्योदय)', 'मोबाइल नंबर'],
-    applyLink: 'https://dashboard.pmjay.gov.in/'
+    applyLink: 'https://pmjay.gov.in/'
   },
   {
     id: 'pmeegp',
@@ -75,6 +75,6 @@ export const schemesData: Scheme[] = [
       occupations: ['Laborer', 'All'] 
     },
     documentsRequired: ['आधार कार्ड', 'प्रोजेक्ट रिपोर्ट (बिजनेस प्लान)', 'आठवीं पास सर्टिफिकेट (यदि लोन >10 लाख है)', 'जाति प्रमाण पत्र'],
-    applyLink: 'https://www.kviconline.gov.in/pmegpeportal/'
+    applyLink: 'https://schemes.vikaspedia.in/viewcontent/schemesall/%E0%A4%89%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A5%87-%E0%A4%B2%E0%A4%BF%E0%A4%AF%E0%A5%87-%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%E0%A4%8F%E0%A4%82/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A7%E0%A4%BE%E0%A4%A8%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80-%E0%A4%B0%E0%A5%8B%E0%A4%9C%E0%A4%97%E0%A4%BE%E0%A4%B0-%E0%A4%B8%E0%A5%83%E0%A4%9C%E0%A4%A8-%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE-(pmegp)?lgn=hi'
   }
 ];
